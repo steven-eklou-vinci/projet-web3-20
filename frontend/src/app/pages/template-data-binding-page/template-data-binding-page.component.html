@@ -1,0 +1,33 @@
+<div class="doc-container">
+  <h1 class="doc-title">Documentation sur les Templates et le Data Binding</h1>
+  <i class="bi bi-window icon-large center-icon"></i>
+
+  <div class="doc-sections">
+    <div class="doc-section">
+      <h2 class="section-title">Qu'est-ce qu'un Template ?</h2>
+      <p class="section-content">
+        Le template est la structure HTML qui définit l'interface utilisateur. Il peut inclure des balises HTML, des directives Angular et du Data Binding pour connecter la logique de l'application aux vues.
+      </p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="section-title">Qu'est-ce que le Data Binding ?</h2>
+      <p class="section-content">
+        Le Data Binding est une fonctionnalité clé d'Angular permettant de synchroniser les données entre le modèle (classe TypeScript) et la vue (template HTML).
+      </p>
+      <ul class="section-list">
+        <li><strong>Interpolation</strong> : <span [innerHTML]="htmlContent"></span></li>
+        <li><strong>Property Binding</strong> : Liaison unidirectionnelle vers les propriétés HTML.</li>
+        <li><strong>Event Binding</strong> : Ecoute des événements utilisateur.</li>
+        <li><strong>Two-Way Binding</strong> : Synchronisation bidirectionnelle des données.</li>
+      </ul>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="section-title">Exemple Pratique :</h2>
+      <p class="section-content">Entrez un texte dans le champ ci-dessous, et observez comment il est mis à jour dynamiquement :</p>
+      <input type="text" (input)="onInputChange($event)" placeholder="Tapez ici..." />
+      <p class="section-content"><strong>Texte Saisi :</strong> {{ userInput }}</p>
+    </div>
+  </div>
+</div>

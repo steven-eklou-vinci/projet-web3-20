@@ -1,0 +1,46 @@
+<div class="doc-container">
+    <h1 class="doc-title">Documentation sur les Directives Angular</h1>
+    <div class="icon-container">
+    <i class="bi bi-code-slash icon-center"></i>
+    </div>
+  
+    <!-- Section d'introduction -->
+    <div class="doc-sections">
+  
+      <!-- Section : Qu'est-ce qu'une Directive ? -->
+      <div class="doc-section">
+        <h2 class="section-title">Qu'est-ce qu'une Directive ?</h2>
+        <p class="section-content">
+          Les directives Angular permettent de modifier le comportement des éléments du DOM. Il existe trois types principaux :
+        </p>
+        <ul class="section-list">
+          <li><strong>Directives Structurelles</strong> : Modifient la structure du DOM (<code>*ngIf</code>, <code>*ngFor</code>).</li>
+          <li><strong>Directives d'Attribut</strong> : Changent l'apparence ou le comportement d'un élément (<code>[style]</code>, <code>[class]</code>).</li>
+          <li><strong>Directives Personnalisées</strong> : Créées par le développeur pour des besoins spécifiques.</li>
+        </ul>
+      </div>
+  
+      <!-- Section : Exemple avec *ngIf -->
+      <div class="doc-section">
+        <h2 class="section-title">Exemple avec *ngIf :</h2>
+        <button class="toggle-btn" (click)="toggleContent()">Afficher/Masquer le Contenu</button>
+        <div *ngIf="showContent" class="content-box">
+          Le contenu est visible ! Cliquez à nouveau pour le masquer.
+        </div>
+      </div>
+  
+      <!-- Section : Exemple avec *ngFor -->
+      <div class="doc-section">
+        <h2 class="section-title">Exemple avec *ngFor :</h2>
+        <p class="section-content">
+          Voici une liste générée dynamiquement en utilisant la directive <code>*ngFor</code> :
+        </p>
+        <ul class="item-list">
+          <li *ngFor="let item of items" class="item">
+            {{ item }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
