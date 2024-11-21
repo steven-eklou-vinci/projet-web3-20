@@ -1,0 +1,123 @@
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #1e3a8a, #2563eb, #3b82f6);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  z-index: 1030;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-brand .logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-brand .logo:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.8); /* Lumière turquoise */
+}
+
+/* Club 4 en doré */
+.navbar-brand .text-gradient {
+  background: linear-gradient(to right, #f7b42c, #fceabb); /* Dégradé doré */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Légère ombre pour le contraste */
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #3b82f6;
+  transform: translateY(-3px);
+}
+
+.navbar-nav .nav-link.active {
+  color: #3b82f6;
+  font-weight: bold;
+  border-bottom: 2px solid #3b82f6;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Navbar Buttons */
+.navbar-buttons .btn-glow {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+  border-radius: 30px;
+  background-color: #2563eb;
+  color: white;
+}
+
+.navbar-buttons .btn-glow:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.8);
+  background-color: #1e3a8a;
+}
+
+.navbar-buttons .btn-outline-light {
+  color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+}
+
+.navbar-buttons .btn-outline-light:hover {
+  background-color: #3b82f6;
+  color: white;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
+
+/* Sticky Navbar */
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-brand .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar-brand .text-gradient {
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+
+  .navbar-buttons {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
