@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 
 
-import { HomeComponent } from './pages/home/home.component'; 
+import { HomeComponent } from './pages/home-page/home.component'; 
 import { ComponentDocComponent } from './pages/component-page/component-doc.component';
 import { PipePageComponent } from './pages/pipe-page/pipe-page.component';
 
