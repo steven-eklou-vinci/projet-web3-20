@@ -8,13 +8,15 @@ import { ComponentDocComponent } from './pages/component-page/component-doc.comp
 import { PipePageComponent } from './pages/pipe-page/pipe-page.component';
 import { TemplateDataBindingComponent } from './pages/template-data-binding-page/template-data-binding-page.component';
 import { DirectiveComponent } from './pages/directive-page/directive-page.component';
+import { RoutingComponent } from './pages/routing/routing.component';
 
   export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'components', component: ComponentDocComponent },
     { path: 'pipes', component: PipePageComponent },
     { path: 'templates-data-binding', component: TemplateDataBindingComponent},
-    { path: 'directives', component: DirectiveComponent}
+    { path: 'directives', component: DirectiveComponent},
+    { path: 'routing', component: RoutingComponent}
   ];
 
   
