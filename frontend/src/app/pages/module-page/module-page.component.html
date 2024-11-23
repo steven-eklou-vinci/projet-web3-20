@@ -1,0 +1,61 @@
+
+ <div class="doc-container">
+        <h1 class="doc-title">Documentation sur les Modules en Angular</h1>
+        <i class="bi bi-stack icon-large center-icon"></i>
+
+        <div class="doc-sections">
+
+            <!-- Section 1: Introduction -->
+            <div class="doc-section">
+                <h2 class="section-title">Qu'est-ce qu'un module en Angular ?</h2>
+                <p class="section-content">
+                    En Angular, un module est une structure qui organise l'application en blocs fonctionnels. 
+                    Ces blocs regroupent les composants, directives, services, et autres fonctionnalités qui travaillent ensemble.
+                    Chaque application Angular possède au moins un module racine, généralement appelé <strong>AppModule</strong>.
+                </p>
+            </div>
+
+            <!-- Section 2: Exemple concret -->
+            <div class="doc-section">
+                <h2 class="section-title">Exemple concret : Création d’un module pour la gestion des utilisateurs</h2>
+                <p class="section-content">
+                    Voici un exemple montrant comment créer un module pour gérer les utilisateurs. Cela inclut la création du 
+                    module, l'ajout de composants, et leur intégration.
+                </p>
+
+                <div class="code-block">
+                    <pre><code class="bash">
+ng generate module user
+ng generate component user/user-list
+ng generate component user/user-details
+                    </code></pre>
+                </div>
+
+                <p class="section-content">
+                    Le fichier <strong>user.module.ts</strong> ressemblera à ceci :
+                </p>
+
+                <div class="code-block">
+                    <pre><code class="typescript">
+{{moduleExample}}
+                    </code></pre>
+                </div>
+            </div>
+
+            <!-- Section 3: Conclusion -->
+            <div class="doc-section">
+                <h2 class="section-title">Pourquoi les modules Angular sont utiles ?</h2>
+                <ul class="section-list">
+                    <li><strong>Organisation et modularité :</strong> facilite la division des fonctionnalités en blocs indépendants.</li>
+                    <li><strong>Réutilisation :</strong> un module peut être partagé entre différentes parties de l'application.</li>
+                    <li><strong>Chargement paresseux :</strong> améliore les performances en ne chargeant que ce qui est nécessaire.</li>
+                    <li><strong>Facilité de collaboration :</strong> permet aux équipes de travailler sur des modules distincts.</li>
+                </ul>
+                <p class="section-content">
+                    En résumé, les modules Angular simplifient le développement d'applications complexes et améliorent la 
+                    productivité des développeurs.
+                </p>
+            </div>
+
+        </div>
+    </div>
