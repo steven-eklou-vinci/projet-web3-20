@@ -9,9 +9,24 @@ export class TemplateDataBindingComponent {
   // Exemple pour démontrer le Data Binding
   title: string = 'Data Binding Angular';
   userInput: string | null = '';
-  htmlContent = 'Utilisation de <code>&#123;&#123;&#125;&#125;</code> pour afficher des données dans le HTML.';
+  htmlContent: string = ' : Utilisée pour afficher les données dans le HTML via des accolades <code>{{}}</code>.';
+  exempleCode: string = `
+  export class TemplateDataBindingComponent {
+    userInput: string = '';
 
+    onInputChange(event: Event): void {
+      const input = event.target as HTMLInputElement;
+      this.userInput = input.value;
+    }
+  }`;
 
+  exempleHtml: string = `
+  &lt;input type="text" (input)="onInputChange($event)" placeholder="Tapez ici..." /&gt;
+  &lt;p class="section-content"&gt;
+    &lt;strong&gt;Texte Saisi :&lt;/strong&gt; {{ userInput }}
+  &lt;/p&gt;`;
+
+  
   onInputChange(event: Event): void {
     const input = event.target as HTMLInputElement; // Cast en HTMLInputElement
     this.userInput = input.value; // Maintenant, 'value' est accessible
