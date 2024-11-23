@@ -1,95 +1,151 @@
 /* Container principal */
 .doc-container {
-    width: 80%;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Titre principal */
+.doc-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #007BFF;
+  margin-bottom: 20px;
+}
+
+/* Icone centrée */
+.icon-large {
+  font-size: 3rem;
+  color: #ff9800;
+  text-align: center;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Sections */
+.doc-sections {
+  margin-top: 20px;
+}
+
+.doc-section {
+  margin-bottom: 30px;
+  padding: 10px; /* Espacement interne uniquement */
+  background-color: transparent; /* Supprime le fond blanc */
+  border-radius: 0; /* Supprime les coins arrondis */
+  box-shadow: none; /* Supprime l'ombre */
+}
+
+/* Titres des sections */
+.section-title {
+  font-size: 1.8rem;
+  color: #2D3E50;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 5px;
+}
+
+/* Contenu des sections */
+.section-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #5a5a5a;
+  margin-bottom: 15px;
+}
+
+/* Listes des explications */
+.explanation-list {
+  margin-top: 15px;
+  padding-left: 20px;
+  font-size: 1.1rem;
+  color: #5a5a5a;
+  list-style: disc;
+}
+
+.explanation-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Texte mis en valeur */
+.explanation-list strong {
+  font-weight: bold;
+  color: #2D3E50;
+}
+
+/* Code dans les explications */
+.explanation-list code {
+  font-family: 'Courier New', Courier, monospace;
+  color: #e83e8c;
+  font-size: 1rem;
+}
+
+/* Input styling */
+input[type="text"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Bloc de code */
+.code-block {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  margin-top: 20px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+
+
+/* Texte dans le bloc */
+pre {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #333;
+  white-space: pre-wrap; /* Permet d'afficher le contenu sur plusieurs lignes */
+  word-wrap: break-word; /* Retour à la ligne si nécessaire */
+}
+
+/* Code texte */
+code {
+  color: #d63384; /* Couleur plus vive pour mettre en valeur le code */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .doc-container {
+    width: 95%;
   }
-  
-  /* Titre principal */
+
   .doc-title {
-    font-size: 2.5rem;
-    text-align: center;
-    color: #007BFF;
-    margin-bottom: 20px;
+    font-size: 2rem;
   }
-  
-  /* Icone centrée */
-  .icon-large {
-    font-size: 3rem;
-    color: #17a2b8;
-    text-align: center;
-    display: block;
-    margin: 10px auto;
-  }
-  
-  /* Sections */
-  .doc-sections {
-    margin-top: 20px;
-  }
-  
-  .doc-section {
-    margin-bottom: 30px;
-  }
-  
-  /* Titres des sections */
+
   .section-title {
-    font-size: 1.8rem;
-    color: #2D3E50;
-    margin-bottom: 10px;
-    font-weight: bold;
-    border-bottom: 2px solid #007BFF;
-    padding-bottom: 5px;
+    font-size: 1.5rem;
   }
-  
-  /* Contenu des sections */
-  .section-content {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #5a5a5a;
-    margin-bottom: 15px;
-  }
-  
-  /* Input styling */
-  input[type="text"] {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  input[type="text"]:focus {
-    border-color: #007BFF;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  }
-  
-  /* Texte mis en valeur */
-  strong {
-    color: #333;
-    font-weight: bold;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .doc-container {
-      width: 95%;
-    }
-  
-    .doc-title {
-      font-size: 2rem;
-    }
-  
-    .section-title {
-      font-size: 1.5rem;
-    }
-  }
-  
+}

@@ -1,117 +1,165 @@
-/* Styling for the container */
+/* Container principal */
 .doc-container {
-    width: 80%;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Titre principal */
+.doc-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #007BFF;
+  margin-bottom: 20px;
+}
+
+/* Icone centrée */
+.icon-large,
+.icon-center {
+  font-size: 3rem;
+  color: #ff9800;
+  text-align: center;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Sections */
+.doc-sections {
+  margin-top: 20px;
+}
+
+.doc-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: transparent; /* Suppression du fond */
+  border-radius: 0; /* Suppression des coins arrondis */
+  box-shadow: none; /* Suppression des ombres */
+}
+
+/* Titres des sections */
+.section-title {
+  font-size: 1.8rem;
+  color: #2D3E50;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 5px;
+}
+
+/* Contenu des sections */
+.section-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #5a5a5a;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Listes des explications */
+.section-list,
+.explanation-list {
+  margin-top: 15px;
+  padding-left: 20px;
+  font-size: 1.1rem;
+  color: #5a5a5a;
+  list-style: disc;
+}
+
+.section-list li,
+.explanation-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Texte mis en valeur */
+.section-list strong,
+.explanation-list strong {
+  font-weight: bold;
+  color: #2D3E50;
+}
+
+/* Code dans les explications */
+.section-list code,
+.explanation-list code {
+  font-family: 'Courier New', Courier, monospace;
+  color: #e83e8c;
+  font-size: 1rem;
+}
+
+/* Boutons */
+.toggle-btn {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Bloc de code */
+.code-block {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  margin-top: 20px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Texte dans le bloc */
+pre {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+code {
+  color: #d63384;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+}
+
+/* Listes d'éléments dynamiques pour *ngFor */
+.item-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.item {
+  margin-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .doc-container {
+    width: 95%;
   }
-  
-  /* Styling for sections */
-  .doc-section {
-    margin-bottom: 30px;
-  }
-  
-  .section-title {
-    font-size: 1.8rem;
-    color: #2D3E50;
-    margin-bottom: 10px;
-    font-weight: bold;
-    border-bottom: 2px solid #007BFF;
-    padding-bottom: 5px;
-  }
-  
-  .section-content {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #5a5a5a;
-    margin-bottom: 15px;
-  }
-  
-  /* Styling for lists */
-  .section-list {
-    padding-left: 20px;
-  }
-  
-  .section-list li {
-    list-style: disc;
-    margin-bottom: 10px;
-  }
-  
-  /* Styling for the toggle button */
-  .toggle-btn {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  
-  .toggle-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Styling for content shown with *ngIf */
-  .content-box {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
-  
-  /* Styling for *ngFor list */
-  .item-list {
-    padding-left: 20px;
-    margin-top: 10px;
-  }
-  
-  .item {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-  }
-   
-/* Conteneur principal */
-.doc-header {
-    display: flex;             /* Active Flexbox */
-    flex-direction: column;    /* Aligne les éléments verticalement */
-    align-items: center;       /* Centre horizontalement */
-    text-align: center;        /* Centre le texte */
-    margin-bottom: 20px;       /* Espacement avec le reste de la page */
-  }
-  
-  /* Titre */
+
   .doc-title {
-    display: flex;             /* Active Flexbox */
-    flex-direction: column;    /* Aligne les éléments verticalement */
-    align-items: center;       /* Centre horizontalement */
-    text-align: center; 
-    font-size: 2.5rem;
-    color: #007BFF;
-    margin-bottom: 10px;       /* Espace entre le titre et l'icône */
+    font-size: 2rem;
   }
-  
-  /* Conteneur pour l'icône */
-  .icon-container {
-    display: flex;
-    justify-content: center;   /* Centre horizontalement */
-    align-items: center;       /* Centre verticalement */
-    width: 100%;               /* S'assure que l'icône est centrée dans le conteneur */
+
+  .section-title {
+    font-size: 1.5rem;
   }
-  
-  /* Icône */
-  .icon-center {
-    font-size: 2.5rem;         /* Taille de l'icône */
-    color: #17a2b8;            /* Couleur de l'icône */
+
+  .code-block {
+    font-size: 1.1rem;
   }
-  
-  
-  
-  
+}

@@ -3,31 +3,93 @@
   <i class="bi bi-window icon-large center-icon"></i>
 
   <div class="doc-sections">
+    <!-- Section : Qu'est-ce qu'un Template -->
     <div class="doc-section">
       <h2 class="section-title">Qu'est-ce qu'un Template ?</h2>
       <p class="section-content">
-        Le template est la structure HTML qui définit l'interface utilisateur. Il peut inclure des balises HTML, des directives Angular et du Data Binding pour connecter la logique de l'application aux vues.
+        Le template est la structure HTML qui définit l'interface utilisateur. Il peut inclure des balises HTML,
+        des directives Angular et du Data Binding pour connecter la logique de l'application aux vues.
+        Un template Angular est généralement associé à une classe TypeScript, et cette combinaison permet
+        de définir une vue réactive.
       </p>
     </div>
 
+    <!-- Section : Qu'est-ce que le Data Binding -->
     <div class="doc-section">
       <h2 class="section-title">Qu'est-ce que le Data Binding ?</h2>
       <p class="section-content">
-        Le Data Binding est une fonctionnalité clé d'Angular permettant de synchroniser les données entre le modèle (classe TypeScript) et la vue (template HTML).
+        Le Data Binding est une fonctionnalité clé d'Angular permettant de synchroniser les données entre
+        le modèle (classe TypeScript) et la vue (template HTML). Voici les principaux types de Data Binding :
       </p>
       <ul class="section-list">
-        <li><strong>Interpolation</strong> : <span [innerHTML]="htmlContent"></span></li>
-        <li><strong>Property Binding</strong> : Liaison unidirectionnelle vers les propriétés HTML.</li>
-        <li><strong>Event Binding</strong> : Ecoute des événements utilisateur.</li>
-        <li><strong>Two-Way Binding</strong> : Synchronisation bidirectionnelle des données.</li>
+        <li>
+          <strong>Interpolation</strong> :
+          <span [innerHTML]="htmlContent"></span>.
+        </li>
+        <li>
+          <strong>Property Binding</strong> : Liaison unidirectionnelle pour transmettre des valeurs aux
+          propriétés d'un élément HTML (ex : <code>[src]</code>, <code>[disabled]</code>).
+        </li>
+        <li>
+          <strong>Event Binding</strong> : Permet d'écouter et de réagir aux événements utilisateur
+          comme <code>(click)</code> ou <code>(input)</code>.
+        </li>
+        <li>
+          <strong>Two-Way Binding</strong> : Synchronisation bidirectionnelle entre le modèle et
+          le template via <code>[(ngModel)]</code>.
+        </li>
       </ul>
     </div>
 
+    <!-- Section : Exemple Pratique -->
     <div class="doc-section">
       <h2 class="section-title">Exemple Pratique :</h2>
-      <p class="section-content">Entrez un texte dans le champ ci-dessous, et observez comment il est mis à jour dynamiquement :</p>
+      <p class="section-content">
+        Entrez un texte dans le champ ci-dessous, et observez comment il est mis à jour dynamiquement
+        dans le modèle.
+      </p>
+
+      <!-- Input et Affichage Dynamique -->
       <input type="text" (input)="onInputChange($event)" placeholder="Tapez ici..." />
-      <p class="section-content"><strong>Texte Saisi :</strong> {{ userInput }}</p>
+      <p class="section-content">
+        <strong>Texte Saisi :</strong> {{ userInput }}
+      </p>
+
+      <!-- Explication complémentaire -->
+      <p class="section-content">
+        Dans cet exemple, l'événement <code>(input)</code> est utilisé pour capturer les données saisies par
+        l'utilisateur. La méthode <code>onInputChange</code> met à jour dynamiquement la variable <code>userInput</code>.
+      </p>
+
+      <!-- Affichage du Code Component -->
+      <h3 class="example-title">Code de mon Component :</h3>
+      <div class="code-block">
+        <pre>
+          <code class="typescript">
+            <span [innerHTML]="exempleCode"></span>
+          </code>
+        </pre>
+      </div>
+      <p class="section-content">
+        <strong>**Explication :** </strong> Dans le TypeScript, nous utilisons <code>event.target</code> pour capturer l'élément HTML déclencheur. 
+        TypeScript, par défaut, considère cet élément comme un <code>EventTarget</code>, une interface générique qui n'a pas
+        de propriété <code>value</code>. Nous devons donc "caster" (convertir) cet élément en <code>HTMLInputElement</code>
+        pour accéder à sa propriété <code>value</code>.
+
+      <!-- Affichage du Code HTML -->
+      <h3 class="example-title">Code HTML :</h3>
+      <div class="code-block">
+        <pre>
+          <code class="html">
+            <span [innerHTML]="exempleHtml"></span>
+          </code>
+        </pre>
+      </div>
+      <p class="section-content">
+        <strong>**Explication :** </strong> Le code HTML utilise une liaison de données Angular pour connecter la vue avec la logique
+        métier (le modèle). Dans le champ <code>&lt;input&gt;</code>, nous capturons les événements <code>(input)</code> et mettons
+        à jour la variable userIn. Le texte saisi est affiché dynamiquement grâce à l'interpolation <code>{{ userInput }}</code>.
+      </p>
     </div>
   </div>
 </div>
