@@ -1,0 +1,47 @@
+<div class="doc-container">
+    <h1 class="doc-title">Documentation sur les routers en Angular</h1>
+    <i class="bi bi-arrows-move icon-large center-icon"></i>
+
+    <div class="doc-sections">
+
+        <div class="doc-section">
+            <h2 class="section-title">Qu'est-ce qu'un router en Angular ?</h2>
+            <p class="section-content">
+                Le Router en Angular est un outil qui gère la <strong>navigation</strong> et le chargement des composants 
+                <strong>en fonction de l'URL de la page</strong>. Contrairement aux applications web traditionnelles, où chaque 
+                navigation recharge une page entière, Angular utilise un router pour permettre de changer de 
+                contenu dynamiquement sans recharger toute la page. C'est ce qu'on appelle une single page application.
+            </p>
+        </div>
+
+        <div class="doc-section">
+            <h2 class="section-title">Configuration d'un router</h2>
+            <p class="section-content">
+                Dans Angular, les routes sont définies sous forme de <strong>tableau  d'objets</strong>, où chaque objet 
+                correspond à une route spécifique. Ceci ce fait dans le fichier <strong>routes.ts</strong>: 
+            </p>
+
+            <div class="code-block">
+                <pre><code class="bash">RAJOUTER CODE</code></pre>
+            </div>
+
+            <p>Chaque objet de route contient les propriétés suivantes :</p>
+
+            <ul class="section-list">
+                <li><strong>Path </strong>: le chemin de l'URL qui déclenchera la route</li>
+                <li><strong>Component </strong>: le composant qui sera chargé lorsque le chemin de l'URL correspond à la route</li>
+            </ul>
+
+            <p class="section-content">
+                Pour pouvoir utiliser toutes ces rajoutes rajoutées dans notre liste, dans le fichier main.ts généré automatiquement
+                lors de l'initialisation du projet, il faut rajouter la ligne suivante :
+            </p>
+
+            <div class="code-block">
+                <pre><code class="bash">RAJOUTER CODE</code></pre>
+            </div>
+        </div>
+
+        
+    </div>
+</div>
