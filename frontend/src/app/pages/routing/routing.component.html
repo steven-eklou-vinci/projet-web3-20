@@ -25,18 +25,52 @@
                 <pre><code class="bash">RAJOUTER CODE</code></pre>
             </div>
 
+            <br>
             <p>Chaque objet de route contient les propriétés suivantes :</p>
 
             <ul class="section-list">
                 <li><strong>Path </strong>: le chemin de l'URL qui déclenchera la route</li>
                 <li><strong>Component </strong>: le composant qui sera chargé lorsque le chemin de l'URL correspond à la route</li>
             </ul>
+        </div>
 
+        <div class="doc-section">
+            <h2 class="section-title">Utilisation d'un router</h2>
             <p class="section-content">
                 Pour pouvoir utiliser toutes ces rajoutes rajoutées dans notre liste, dans le fichier main.ts généré automatiquement
                 lors de l'initialisation du projet, il faut rajouter la ligne suivante :
             </p>
 
+            <div class="code-block">
+                <pre><code class="bash">RAJOUTER CODE</code></pre>
+            </div>
+
+            <br>
+            <p class="section-content">
+                Angular utilise un composant spécial appelé
+                <strong>&lt;router-outlet&gt;</strong> pour afficher dynamiquement le contenu associé à une route.
+            </p>
+            <div class="code-block">
+                <pre><code class="bash">RAJOUTER CODE avec routerLink</code></pre>
+            </div>
+
+            <br>
+            <p class="section-content">
+                La raison pour laquelle on utilise le <strong>&lt;router-outlet&gt;</strong> est pour pouvoir naviguer entre les différentes pages de notre application.
+                Il est préféré à href car il permet une navigation sans recharger la page entière, ce qui est crucial pour les applications SPA.
+            </p>
+            <p class="section-content">
+                Lorsque vous utilisez un lien avec href, le navigateur effectue un rechargement complet de la page.
+            </p>
+        </div>
+
+        <div class="doc-section">
+            <h2 class="section-title">Gestion des routes paramétrées</h2>
+            <p class="section-content">
+                Il est souvent utile d'inclure des paramètres dans les routes pour permettre une navigation dynamique
+                et, par exmple, obtenir les données d'un utilisateur spécifique. Pour le faire, on peut définir des routes
+                paramétrées dans le fichier routes.ts:
+            </p>
             <div class="code-block">
                 <pre><code class="bash">RAJOUTER CODE</code></pre>
             </div>
