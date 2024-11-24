@@ -70,7 +70,7 @@ export class RoutingComponent {
           \`
   })
   export class UserDetailsComponent implements OnInit {
-      userId: string | null = null;
+      userId: int = 0;
 
       constructor(private route: ActivatedRoute) {}
 
