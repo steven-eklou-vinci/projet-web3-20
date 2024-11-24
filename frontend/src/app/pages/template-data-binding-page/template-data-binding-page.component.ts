@@ -13,6 +13,7 @@ export class TemplateDataBindingComponent {
   exempleCode: string = `
   export class TemplateDataBindingComponent {
     userInput: string = '';
+    type : string = "text";
 
     onInputChange(event: Event): void {
       const input = event.target as HTMLInputElement;
@@ -20,8 +21,10 @@ export class TemplateDataBindingComponent {
     }
   }`;
 
+  type : string = "text";
+
   exempleHtml: string = `
-  &lt;input type="text" (input)="onInputChange($event)" placeholder="Tapez ici..." /&gt;
+  &lt;input [type]="type" (input)="onInputChange($event)" placeholder="Tapez ici..." /&gt;
   &lt;p class="section-content"&gt;
     &lt;strong&gt;Texte Saisi :&lt;/strong&gt; {{ userInput }}
   &lt;/p&gt;`;
