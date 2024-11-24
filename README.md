@@ -22,7 +22,7 @@ Cette architecture a été choisie pour offrir une navigation rapide et fluide, 
 ---
 
 ## **Liens utiles**
-- **Lien vers la vidéo de présentation de la technologie** :
+- **Lien vers la vidéo de présentation de la technologie** : https://youtu.be/u_wAbFusqbw?feature=shared
 - **Lien vers le repo du backend** : https://github.com/mamadou-barry-vinci/backend-projet-web3.git 
 
 ---
