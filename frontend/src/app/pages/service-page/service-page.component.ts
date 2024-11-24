@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./service-page.component.css'],
 })
 export class ServicePageComponent {
-  serviceExample: string = `import { Injectable } from '@angular/core';
+  serviceExample: string = `
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
@@ -21,7 +22,8 @@ export class MyService {
   }
 }`;
 
-serviceComponentExample: string = `import { Component } from '@angular/core';
+serviceComponentExample: string = `
+import { Component } from '@angular/core';
 import { MyService } from './my-service.service';
 
 @Component({

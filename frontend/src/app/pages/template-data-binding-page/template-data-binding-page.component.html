@@ -46,7 +46,7 @@
       </p>
 
       <!-- Input et Affichage Dynamique -->
-      <input type="text" (input)="onInputChange($event)" placeholder="Tapez ici..." />
+      <input [type]="type" (input)="onInputChange($event)" placeholder="Tapez ici..." />
       <p class="section-content">
         <strong>Texte Saisi :</strong> {{ userInput }}
       </p>
