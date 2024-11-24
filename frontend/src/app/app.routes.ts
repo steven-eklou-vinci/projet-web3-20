@@ -9,6 +9,7 @@ import { RoutingComponent } from './pages/routing/routing.component';
 import { ModuleComponent } from './pages/module-page/module-page.component';
 import { ServicePageComponent } from './pages/service-page/service-page.component';
 
+// liste des routes de l'application
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'components', component: ComponentDocComponent },

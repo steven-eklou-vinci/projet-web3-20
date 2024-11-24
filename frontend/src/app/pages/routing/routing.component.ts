@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './routing.component.css'
 })
 export class RoutingComponent {
+  // Variables utilisées dans l'html pour les morceaux de code à montrer
   configRouterExemple: string = `
   import { Routes } from '@angular/router';
 
