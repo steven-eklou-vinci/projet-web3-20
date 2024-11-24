@@ -1,0 +1,62 @@
+<div class="doc-container">
+    <h1 class="doc-title">Documentation sur les Services et l'Injection de Dépendances en Angular</h1>
+    <i class="bi bi-gear icon-large center-icon"></i>
+
+    <div class="doc-sections">
+
+        <!-- Section 1: Introduction -->
+        <div class="doc-section">
+            <h2 class="section-title">Qu'est-ce qu'un service en Angular ?</h2>
+            <p class="section-content">
+                Un service en Angular est une classe qui contient des fonctionnalités réutilisables ou de la logique métier, pouvant être partagées entre différents composants. L’injection de dépendances permet à Angular de fournir ces services aux composants ou autres parties de l’application, sans nécessiter leur instanciation directe.
+            </p>
+        </div>
+
+        <!-- Section 2: Exemple concret -->
+        <div class="doc-section">
+            <h2 class="section-title">Exemple concret : Implémentation d'un service avec injection de dépendances</h2>
+            <p class="section-content">
+                Voici comment créer un service Angular pour fournir des données et l'utiliser via l'injection de dépendances.
+            </p>
+
+            <div class="code-block">
+                <pre><code class="bash">
+ng generate service my-service
+                </code></pre>
+            </div>
+
+            <p class="section-content">Le fichier <strong>my-service.service.ts</strong> ressemblera à ceci :</p>
+
+            <div class="code-block">
+                <pre><code class="typescript">
+    {{serviceExample}}
+                </code></pre>
+            </div>
+
+            <p class="section-content">
+                Ensuite, utilisez ce service dans un composant via l’injection de dépendances, comme suit :
+            </p>
+
+            <div class="code-block">
+                <pre><code class="typescript">
+                 {{serviceComponentExample}}
+                </code></pre>
+            </div>
+        </div>
+
+        <!-- Section 3: Conclusion -->
+        <div class="doc-section">
+            <h2 class="section-title">Pourquoi l'injection de dépendances est utile ?</h2>
+            <ul class="section-list">
+                <li><strong>Réduction du couplage :</strong> Les composants ne sont pas responsables de l’instanciation des services.</li>
+                <li><strong>Testabilité :</strong> Les dépendances peuvent être remplacées facilement par des mocks ou stubs pour les tests.</li>
+                <li><strong>Réutilisabilité :</strong> Les services peuvent être partagés entre plusieurs parties de l'application.</li>
+                <li><strong>Maintenance :</strong> Le code devient plus organisé et modulaire.</li>
+            </ul>
+            <p class="section-content">
+                En résumé, l'injection de dépendances en Angular simplifie l'utilisation des services, améliore la structure du code et rend les applications plus maintenables et testables.
+            </p>
+        </div>
+
+    </div>
+</div>
