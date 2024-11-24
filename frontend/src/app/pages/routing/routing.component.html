@@ -22,7 +22,7 @@
             </p>
 
             <div class="code-block">
-                <pre><code class="bash">RAJOUTER CODE</code></pre>
+                <pre><code class="bash">{{ configRouterExemple }}</code></pre>
             </div>
 
             <br>
@@ -37,12 +37,12 @@
         <div class="doc-section">
             <h2 class="section-title">Utilisation d'un router</h2>
             <p class="section-content">
-                Pour pouvoir utiliser toutes ces rajoutes rajoutées dans notre liste, dans le fichier main.ts généré automatiquement
+                Pour pouvoir utiliser toutes ces rajoutes rajoutées dans notre liste, dans le fichier <strong>main.ts</strong> généré automatiquement
                 lors de l'initialisation du projet, il faut rajouter la ligne suivante :
             </p>
 
             <div class="code-block">
-                <pre><code class="bash">RAJOUTER CODE</code></pre>
+                <pre><code class="bash">{{ routerMainExemple }}</code></pre>
             </div>
 
             <br>
@@ -51,12 +51,12 @@
                 <strong>&lt;router-outlet&gt;</strong> pour afficher dynamiquement le contenu associé à une route.
             </p>
             <div class="code-block">
-                <pre><code class="bash">RAJOUTER CODE avec routerLink</code></pre>
+                <pre><code class="bash">{{ routerLinkExemple }}</code></pre>
             </div>
 
             <br>
             <p class="section-content">
-                La raison pour laquelle on utilise le <strong>&lt;router-outlet&gt;</strong> est pour pouvoir naviguer entre les différentes pages de notre application.
+                La raison pour laquelle on utilise le <strong>routerLink</strong> est pour pouvoir naviguer entre les différentes pages de notre application.
                 Il est préféré à href car il permet une navigation sans recharger la page entière, ce qui est crucial pour les applications SPA.
             </p>
             <p class="section-content">
@@ -74,7 +74,7 @@
             <p class="section-content">Voici un exemple de définition de routes paramétrées dans le fichier <strong>routes.ts</strong> :</p>
         
             <div class="code-block">
-                <pre><code class="typescript"></code></pre>
+                <pre><code class="typescript"> {{ rParamExemple }}</code></pre>
             </div>
         
             <br>
@@ -90,7 +90,7 @@
             </p>
         
             <div class="code-block">
-                <pre><code class="typescript"></code></pre>
+                <pre><code class="typescript"> {{ recupParamExemple }}</code></pre>
             </div>
         
             <br>
@@ -106,12 +106,12 @@
             </p>
         
             <div class="code-block">
-                <pre><code class="html"></code></pre>
+                <pre><code class="html">{{ navVersRouteExemple }}</code></pre>
             </div>
         
             <br>
             <p class="section-content">
-                Ce lien redirige l'utilisateur vers la route <code>/user/42</code> et charge le composant associé avec l'ID
+                Ce lien redirige l'utilisateur vers la route <code>/user/user.id</code> et charge le composant associé avec l'ID
                 passé comme paramètre.
             </p>
         </div>

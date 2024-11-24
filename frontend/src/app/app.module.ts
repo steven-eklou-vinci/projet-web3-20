@@ -5,7 +5,6 @@ import {ComponentDocComponent} from './pages/component-page/component-doc.compon
 import {AppComponent } from './app.component'; 
 import { TemplateDataBindingComponent } from './pages/template-data-binding-page/template-data-binding-page.component';
 import { DirectiveComponent } from './pages/directive-page/directive-page.component';
-import { use } from 'marked';
 import { UserModule } from './user/user.module';
 import { ModuleComponent } from './pages/module-page/module-page.component';
 import { ServicePageComponent } from './pages/service-page/service-page.component';
