@@ -1,7 +1,7 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const quizzRoutes = require('./quizz.controller');
+const quizzRoutes = require('./src/controllers/quizz');
 
 const app = express();
 
