@@ -10,6 +10,7 @@ import { ModuleComponent } from './pages/module-page/module-page.component';
 import { ServicePageComponent } from './pages/service-page/service-page.component';
 import { QuizzService } from './services/quizz.service';
 import { CommonModule } from '@angular/common';
+import { QuizzPageComponent } from './pages/quizz-page/quizz-page.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { CommonModule } from '@angular/common';
     DirectiveComponent,
     ModuleComponent,
     ServicePageComponent,
+    QuizzPageComponent
     
   ],
   imports: [
