@@ -67,14 +67,55 @@
         <div class="doc-section">
             <h2 class="section-title">Gestion des routes paramétrées</h2>
             <p class="section-content">
-                Il est souvent utile d'inclure des paramètres dans les routes pour permettre une navigation dynamique
-                et, par exmple, obtenir les données d'un utilisateur spécifique. Pour le faire, on peut définir des routes
-                paramétrées dans le fichier routes.ts:
+                Il est souvent utile d'inclure des paramètres dans les routes pour permettre une navigation dynamique,
+                par exemple, afficher les informations d'un utilisateur spécifique ou d'un produit particulier. Cela se fait
+                en ajoutant des variables dynamiques dans le chemin des routes, définies avec le préfixe <code>:</code>.
             </p>
+            <p class="section-content">Voici un exemple de définition de routes paramétrées dans le fichier <strong>routes.ts</strong> :</p>
+        
             <div class="code-block">
-                <pre><code class="bash">RAJOUTER CODE</code></pre>
+                <pre><code class="typescript"></code></pre>
             </div>
+        
+            <br>
+            <p class="section-content">
+                Dans l'exemple ci-dessus, la route <code>/user/:id</code> accepte un paramètre dynamique nommé <code>id</code>.
+                Ce paramètre peut être utilisé dans le composant correspondant pour charger des données spécifiques à cet utilisateur.
+            </p>
+        
+            <h3 class="sub-section-title">Récupération des paramètres dans le composant</h3>
+            <p class="section-content">
+                Dans le composant correspondant, vous pouvez récupérer les paramètres dynamiques via le service
+                <code>ActivatedRoute</code> fourni par Angular.
+            </p>
+        
+            <div class="code-block">
+                <pre><code class="typescript"></code></pre>
+            </div>
+        
+            <br>
+            <p class="section-content">
+                Dans cet exemple, la méthode <code>snapshot.paramMap.get('id')</code> permet de récupérer la valeur du paramètre <code>id</code>
+                présent dans l'URL au moment du chargement du composant. Vous pouvez ensuite utiliser cette valeur pour afficher ou charger
+                des données spécifiques, par exemple depuis une API ou une base de données.
+            </p>
+        
+            <h3 class="sub-section-title">Navigation vers une route paramétrée</h3>
+            <p class="section-content">
+                Pour naviguer vers une route paramétrée, utilisez la directive <code>routerLink</code> avec des paramètres dynamiques :
+            </p>
+        
+            <div class="code-block">
+                <pre><code class="html"></code></pre>
+            </div>
+        
+            <br>
+            <p class="section-content">
+                Ce lien redirige l'utilisateur vers la route <code>/user/42</code> et charge le composant associé avec l'ID
+                passé comme paramètre.
+            </p>
         </div>
+        
 
         
     </div>
