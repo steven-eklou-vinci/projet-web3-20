@@ -2,7 +2,7 @@ const questions = require('../models/questions');
 
 // Récupérer 5 questions aléatoires
 const getAllQuestions = (req, res) => {
-  // Mélanger les questions et en sélectionner 5
+  
   const shuffledQuestions = [...questions]; // Crée une copie du tableau des questions
   shuffledQuestions.sort(() => Math.random() - 0.5); // Mélange les questions
   const selectedQuestions = shuffledQuestions.slice(0, 5); // Prend les 5 premières questions après mélange
