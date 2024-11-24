@@ -8,6 +8,9 @@ import { DirectiveComponent } from './pages/directive-page/directive-page.compon
 import { UserModule } from './user/user.module';
 import { ModuleComponent } from './pages/module-page/module-page.component';
 import { ServicePageComponent } from './pages/service-page/service-page.component';
+import { QuizzService } from './services/quizz.service';
+import { CommonModule } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +27,11 @@ import { ServicePageComponent } from './pages/service-page/service-page.componen
   imports: [
     routes,
     UserModule,
+    CommonModule
     // Autres modules ici
+  ],
+  providers: [
+    QuizzService,
   ],
   bootstrap: [AppComponent]
 })

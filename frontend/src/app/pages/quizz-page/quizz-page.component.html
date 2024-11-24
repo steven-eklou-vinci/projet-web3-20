@@ -1,0 +1,31 @@
+<div class="quiz-container">
+    <h1>Quiz Angular</h1>
+  
+    <!-- Chargement -->
+    <div *ngIf="loading">Chargement des questions...</div>
+  
+    <!-- Affichage du quiz -->
+    <div *ngIf="!loading && !isQuizFinished">
+      <h2>Question {{ currentQuestionIndex + 1 }}: {{ questions[currentQuestionIndex]?.question }}</h2>
+  
+      <div class="options">
+        <button
+          *ngFor="let option of questions[currentQuestionIndex]?.options"
+          [class.selected]="selectedAnswer === option"
+          (click)="selectAnswer(option)"
+        >
+          {{ option }}
+        </button>
+      </div>
+  
+      <button (click)="submitAnswer()" [disabled]="!selectedAnswer">Valider</button>
+    </div>
+  
+    <!-- Résultats -->
+    <div *ngIf="isQuizFinished">
+      <h2>Résultats</h2>
+      <p>Vous avez obtenu {{ score }} / {{ questions.length }} bonnes réponses.</p>
+      <button (click)="restartQuiz()">Recommencer</button>
+    </div>
+  </div>
+  

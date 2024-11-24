@@ -8,6 +8,7 @@ import { DirectiveComponent } from './pages/directive-page/directive-page.compon
 import { RoutingComponent } from './pages/routing/routing.component';
 import { ModuleComponent } from './pages/module-page/module-page.component';
 import { ServicePageComponent } from './pages/service-page/service-page.component';
+import {QuizzPageComponent} from './pages/quizz-page/quizz-page.component';
 
 // liste des routes de l'application
 export const routes: Routes = [
@@ -19,4 +20,5 @@ export const routes: Routes = [
   { path: 'routing', component: RoutingComponent },
   { path: 'modules', component: ModuleComponent },
   { path: 'services', component: ServicePageComponent },
+  { path: 'quizz', component: QuizzPageComponent },
 ];
