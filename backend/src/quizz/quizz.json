@@ -1,0 +1,39 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Quel est le langage utilisé pour styliser une page web ?",
+      "options": ["HTML", "CSS", "JavaScript", "Python"],
+      "correctAnswer": "CSS",
+      "lien": "http://localhost:4200/routing"
+    },
+    {
+      "id": 2,
+      "question": "En quelle année JavaScript a-t-il été créé ?",
+      "options": ["1990", "1995", "2000", "2005"],
+      "correctAnswer": "1995",
+      "lien": "http://localhost:4200/routing"
+    },
+    {
+      "id": 3,
+      "question": "Quel symbole est utilisé pour commenter une seule ligne en JavaScript ?",
+      "options": ["//", "/* */", "#", "<!-- -->"],
+      "correctAnswer": "//",
+      "lien": "http://localhost:4200/routing"
+    },
+    {
+      "id": 4,
+      "question": "Quel framework est utilisé pour créer des applications Angular ?",
+      "options": ["React", "Vue.js", "Angular", "Django"],
+      "correctAnswer": "Angular",
+      "lien": "http://localhost:4200/routing"
+    },
+    {
+      "id": 5,
+      "question": "Quelle balise HTML est utilisée pour inclure un fichier JavaScript ?",
+      "options": ["<script>", "<link>", "<style>", "<js>"],
+      "correctAnswer": "<script>",
+      "lien": "http://localhost:4200/routing"
+    }
+  ]
+}
